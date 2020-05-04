@@ -1,0 +1,2 @@
+aws cloudformation create-stack --stack-name petstore-api-pipeline --template-body file://./petstore-api-pipeline.yaml --parameters
+ParameterKey=BucketRoot,ParameterValue=lazarusbucket ParameterKey=GitHubBranch,ParameterValue=master ParameterKey=GitHubRepositoryName,ParameterValue=aws-codepipeline-codebuild-with-postman ParameterKey=GitHubToken,ParameterValue=9522729924e9a3bc9f231c4af85cb647c9f9cb3b ParameterKey=GitHubUser,ParameterValue=yfrenkel --capabilities CAPABILITY_NAMED_IAM
